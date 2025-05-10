@@ -5,8 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Task_tool"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="MainWindow" Height="450" Width="800"
+        MinWidth="300" MinHeight="500">
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel VerticalAlignment="Center"
+                        HorizontalAlignment="Left">
+                <TextBlock Grid.Column="0"
+                           Text="test"
+                           FontWeight="Bold"
+                           FontSize="30"
+                           Padding="16,0,0,16"/>
+            </StackPanel>
+            <Button Grid.Column="1"
+                    Width="50" Height="50">
+                <TextBlock Text="Settings" 
+                           FontWeight="Bold" />
+            </Button>
+        </Grid>
+        <StackPanel Grid.Row="1"
+                    Margin="0,16,0,0">
+            
+        </StackPanel>
     </Grid>
 </Window>
