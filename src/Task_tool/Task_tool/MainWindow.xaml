@@ -33,7 +33,7 @@
         </Grid>
         <StackPanel Grid.Row="1"
                     Margin="0,16,0,0">
-            <StackPanel x-Name="Task"  Margin="0,16,0,0">
+            <StackPanel  Margin="0,16,0,0">
                 
             </StackPanel>
         </StackPanel>
